@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Smooch&display=swap');
 
 * {
     margin: 0;
@@ -10,13 +10,19 @@
   :root {
       --yellow-bg-: #e4d404;
       --black-nv-: rgb(17, 13, 6);
-      --image-bd-: url(./img/wallpapper-brf.jpg);
+      /* --image-bd-: url(./img/wallpapper-brf.jpg); */
   }
 
-     /* Mentor: La imagen del BG es solo a modo de relleno jaja*/
+  /* * {
+      border: 2px solid red;
+  }  */
+
 body {
     font-family: var(--font);
-    background: var(--yellow-bg-);
+    background-image:url(./img/barriles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:max-content;
 }
 
 .logo {
@@ -27,17 +33,121 @@ body {
 
 .header {
     background: var(--black-nv-);
-    height: 80px;
+    height: 90px;
     width: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px ;
+    justify-content: space-between;
     box-shadow: 0 0 60px;
-   
+  }
+
+.navbar { 
+    flex-direction: flex;
+    width: 150px;
+    height: 50px;
 }
 
-.list {
+.beer {
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 110px;
+    width: auto;
+    margin-left: 100px;
+    gap: 10px;
+}
+
+/* h1 {
+   font-family: Smooch;
+   color: #F6F7f2;
+   width: 165px;
+   height: 70px;
+   border-radius: 20px;
+   font-size: 45px;
+   font-weight: 400;
+   margin-top: 13px;
+   margin-right: 100px;
+   border: 2px solid white;
+   box-shadow: 0 0 20px;
+   padding: 3px;
+  } */
+
+    /* menu hamburguesa */
+.button {
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 7px;
+    background: black;
+    cursor: pointer;
+
+}
+.button span {
+    width:30px ;
+    height: 5px;
+    background: var(--yellow-bg-);
+}
+
+.h3 {
+    color: white;
+   padding: 5px;
+   font-weight: 200;
+}
+
+.menuh {
+    display: none;
+    align-items: center;
+    
+}
+
+.ham {
+    display: none;
+    text-align: center;
+    background: black;
+    border-radius: 7px;
+    padding: 20px;
+    width: 150px;
+    margin: 10px ;
+  }
+
+.ham li {
+    list-style: none;
+    display: block;
+    padding: 5px;
+    color: #e4d404;
+}
+
+.ham li:hover {
+    text-decoration: underline;
+    color: rgb(243, 150, 10);
+    }
+
+.menuh:checked +.ham {
+    display: block;
+  }
+
+  .bellsect {
+    width: auto;
+    height: 250px;
+    border-radius: 100px;
+    /* margin-top: 40px; */
+    border:  2px solid red;
+    }
+
+/* 
+.bellsect {
+
+} */
+
+
+
+
+
+/* .list {
     display: flex;
     gap: 50px;
     list-style: none;
@@ -51,7 +161,7 @@ body {
 .link:hover {
     text-decoration: underline;
     color: rgb(243, 150, 10);
-}
+} */
 
 
 
